@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient color generator</title>
+
+      <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Animations -->
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="square square4"></div>
+    <div class="square square5"></div>
+
+    <!-- Random gradient color generator  -->
+    <div class="random-color">
+      <!-- generated gradient code and copy icon -->
+      <div class="code">
+        <div class="code-text"></div>
+        <div class="copy-icon"><i class="fa-regular fa-copy"></i></div>
+      </div>
+
+      <!-- gradient display -->
+      <div class="display" id="gradient"></div>
+
+      <!-- Gradient Controler -->
+      <div class="control">
+        <input type="color" class="color1" name="color1" value="#FFAAAA" />
+        <input type="color" class="color2" name="color2" value="#734C8F" />
+        <select name="directions">
+          <option value="to right">to right</option>
+          <option value="to right bottom">to right bottom</option>
+          <option value="to right top">to right top</option>
+          <option value="to left">to left</option>
+          <option value="to left bottom">to left bottom</option>
+          <option value="to left top">to left top</option>
+          <option value="to bottom">to bottom</option>
+          <option value="to top">to top</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
